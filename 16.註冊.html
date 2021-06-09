@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>註冊</title>
+        <meta charset=utf8>
+    </head>
+        <form method="GET" action="regist.php">
+            姓名：<input type="text" name=id><br>
+            密碼：<input type="password" name=pwd><br>
+            性別：<input type="radio" name=sex value=m>男<br>
+            <input type="radio" name=sex value=f>女            
+            <input type="radio" name=sex value=s>多元<br>
+            <!--value屬性-->
+            <!--value 若沒設定預設為空-->
+            興趣：<input type="checkbox" name=interest value=chat>跟朋友聊天
+            <input type="checkbox" value=music>音樂
+            <input type="checkbox" value=sleep checked>睡覺     
+            <!--checked 預先勾選-->
+            <p></p>  
+            居住地：<select name=county>
+            <option value=Hsinchu>新竹</option>
+            <option value=Taichung>台中</option>  
+            <option value=Pingtung>屏東</option>
+            <option value=others>其他</option><br>
+           </select>
+           <!--select 下拉式選單-->
+           <p></p>     
+           自傳：<br><textarea name=autobiography rows=10 cols=40>
+             請輸入自傳內容...
+           </textarea>
+           <p></p>
+            <input type="submit" value="註冊">
+            <input type="reset" value="清除">
+            
+        </form>
+    </body>
+</html>
